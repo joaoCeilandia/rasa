@@ -59,14 +59,14 @@ DEFAULT_ENDPOINTS_FILE = "data/test_endpoints/example_endpoints.yml"
 TEST_DIALOGUES = [
     "data/test_dialogues/default.json",
     "data/test_dialogues/formbot.json",
-    "data/test_dialogues/moodbot.json",
+    "data/test_dialogues/moodbot.json",  # TODO: JUZL:
 ]
 
 EXAMPLE_DOMAINS = [
     DEFAULT_DOMAIN_PATH_WITH_SLOTS,
     DEFAULT_DOMAIN_PATH_WITH_MAPPING,
     "examples/formbot/domain.yml",
-    "examples/moodbot/domain.yml",
+    "examples/moodbot/domain.yml",  # TODO: JUZL:
 ]
 
 

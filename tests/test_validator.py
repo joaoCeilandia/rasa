@@ -11,7 +11,7 @@ from pathlib import Path
 
 async def test_verify_intents_does_not_fail_on_valid_data():
     importer = RasaFileImporter(
-        domain_path="examples/moodbot/domain.yml",
+        domain_path="examples/moodbot/domain.yml",  # TODO: JUZL:
         training_data_paths=[DEFAULT_NLU_DATA],
     )
     validator = await Validator.from_importer(importer)
@@ -212,7 +212,7 @@ async def test_verify_there_is_example_repetition_in_intents():
     # moodbot nlu data already has duplicated example 'good afternoon'
     # for intents greet and goodbye
     importer = RasaFileImporter(
-        domain_path="examples/moodbot/domain.yml",
+        domain_path="examples/moodbot/domain.yml",  # TODO: JUZL:
         training_data_paths=[DEFAULT_NLU_DATA],
     )
     validator = await Validator.from_importer(importer)
@@ -223,7 +223,7 @@ async def test_verify_logging_message_for_repetition_in_intents(caplog):
     # moodbot nlu data already has duplicated example 'good afternoon'
     # for intents greet and goodbye
     importer = RasaFileImporter(
-        domain_path="examples/moodbot/domain.yml",
+        domain_path="examples/moodbot/domain.yml",  # TODO: JUZL:
         training_data_paths=[DEFAULT_NLU_DATA],
     )
     validator = await Validator.from_importer(importer)
@@ -255,7 +255,7 @@ async def test_early_exit_on_invalid_domain():
 
 async def test_verify_there_is_not_example_repetition_in_intents():
     importer = RasaFileImporter(
-        domain_path="examples/moodbot/domain.yml",
+        domain_path="examples/moodbot/domain.yml",  # TODO: JUZL:
         training_data_paths=["examples/knowledgebasebot/data/nlu.md"],
     )
     validator = await Validator.from_importer(importer)
